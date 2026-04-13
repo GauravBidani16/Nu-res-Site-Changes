@@ -1,59 +1,60 @@
 <div class="nrf-card">
 <div class="nrf-header">
 <h2 class="nrf-header__title">NIH eraCommons account request</h2>
-<p class="nrf-header__desc">Request a new NIH eraCommons account or affiliate an existing account with Northeastern University. Submissions are reviewed by the <strong>NU-RES Help Center</strong>.
-</p>
-</div>
+<p class="nrf-header__desc">Request a new NIH eraCommons account or affiliate an existing account with Northeastern University. Submissions are reviewed by the <strong>NU-RES Help Center</strong>.</p>
 
+</div>
 <p class="nrf-section-label">Account type</p>
+
 <div class="nrf-toggle">
 <div class="nrf-toggle__option is-active" data-target="nrf-section-new">
 <p class="nrf-toggle__label">First time registration</p>
 <p class="nrf-toggle__desc">I don't have an eraCommons account yet</p>
+
 </div>
 <div class="nrf-toggle__option" data-target="nrf-section-existing">
 <p class="nrf-toggle__label">Affiliate existing account</p>
 <p class="nrf-toggle__desc">I already have an eraCommons account</p>
-</div>
-</div>
 
+</div>
+</div>
 <div id="nrf-section-new">
 <div class="nrf-fields">
+<div class="nrf-row">
+<div id="field-newBehalf" class="nrf-field"><label for="nrf-newBehalf">Are you completing this form for yourself or on behalf of someone else? <abbr title="required">*</abbr></label><select id="nrf-newBehalf" class="nrf-input nrf-input--select">
+<option value="">— Select an option —</option>
+<option value="Self">For myself</option>
+<option value="Someone Else">On behalf of someone else</option>
+</select></div>
+</div>
+<div id="nrf-new-requesterRow" class="nrf-row nrf-hidden">
+<div id="field-newRequesterEmail" class="nrf-field"><label for="nrf-newRequesterEmail">Requester's email address <abbr title="required">*</abbr></label>Email address of the person this request is being submitted for
+
+<input id="nrf-newRequesterEmail" class="nrf-input" autocomplete="email" type="email" placeholder="requester@northeastern.edu" />
+
+</div>
+</div>
 <div class="nrf-row nrf-row--3col">
-<div class="nrf-field" id="field-firstName">
-<label for="nrf-firstName">First name <abbr title="required">*</abbr></label>
-<input class="nrf-input" type="text" id="nrf-firstName" autocomplete="given-name" placeholder="Luke">
+<div id="field-firstName" class="nrf-field"><label for="nrf-firstName">First name <abbr title="required">*</abbr></label><input id="nrf-firstName" class="nrf-input" autocomplete="given-name" type="text" placeholder="Luke" /></div>
+<div class="nrf-field"><label for="nrf-middleName">Middle name</label><input id="nrf-middleName" class="nrf-input" autocomplete="additional-name" type="text" placeholder="Geoffrey" /></div>
+<div id="field-lastName" class="nrf-field"><label for="nrf-lastName">Last name <abbr title="required">*</abbr></label><input id="nrf-lastName" class="nrf-input" autocomplete="family-name" type="text" placeholder="Johnson" /></div>
 </div>
-<div class="nrf-field">
-<label for="nrf-middleName">Middle name</label>
-<input class="nrf-input" type="text" id="nrf-middleName" autocomplete="additional-name" placeholder="Geoffrey">
-</div>
-<div class="nrf-field" id="field-lastName">
-<label for="nrf-lastName">Last name <abbr title="required">*</abbr></label>
-<input class="nrf-input" type="text" id="nrf-lastName" autocomplete="family-name" placeholder="Johnson">
-</div>
-</div>
-
 <div class="nrf-row">
-<div class="nrf-field" id="field-username">
-<label for="nrf-username">Username <abbr title="required">*</abbr></label>
-<p>Must be more than 8 characters</p>
-<input class="nrf-input" type="text" id="nrf-username" autocomplete="username" placeholder="lukegjohnson">
-</div>
-</div>
+<div id="field-username" class="nrf-field"><label for="nrf-username">Username <abbr title="required">*</abbr></label>Must be more than 8 characters
 
-<div class="nrf-row">
-<div class="nrf-field" id="field-email">
-<label for="nrf-email">Email address <abbr title="required">*</abbr></label>
-<p>Please use your Northeastern University email address</p>
-<input class="nrf-input" type="email" id="nrf-email" autocomplete="email" placeholder="lu.johnson@northeastern.edu">
-</div>
-</div>
+<input id="nrf-username" class="nrf-input" autocomplete="username" type="text" placeholder="lukegjohnson" />
 
+</div>
+</div>
 <div class="nrf-row">
-<div class="nrf-field" id="field-nihRole">
-<label for="nrf-nihRole">NIH role <abbr title="required">*</abbr></label>
-<select class="nrf-input nrf-input--select" id="nrf-nihRole">
+<div id="field-email" class="nrf-field"><label for="nrf-email">Email address <abbr title="required">*</abbr></label>Please use your Northeastern University email address
+
+<input id="nrf-email" class="nrf-input" autocomplete="email" type="email" placeholder="lu.johnson@northeastern.edu" />
+
+</div>
+</div>
+<div class="nrf-row">
+<div id="field-nihRole" class="nrf-field"><label for="nrf-nihRole">NIH role <abbr title="required">*</abbr></label><select id="nrf-nihRole" class="nrf-input nrf-input--select">
 <option value="">— Select a role —</option>
 <option value="AA">AA</option>
 <option value="ASST">ASST</option>
@@ -68,49 +69,48 @@
 <option value="TRAINEE">TRAINEE</option>
 <option value="Undergraduate">Undergraduate</option>
 <option value="Other">Other</option>
-</select>
+</select></div>
+</div>
+<div id="nrf-otherRoleRow" class="nrf-row nrf-hidden">
+<div id="field-otherRole" class="nrf-field"><label for="nrf-otherRole">Specify role <abbr title="required">*</abbr></label><input id="nrf-otherRole" class="nrf-input" type="text" placeholder="Describe your role" /></div>
 </div>
 </div>
-
-<div class="nrf-row nrf-hidden" id="nrf-otherRoleRow">
-<div class="nrf-field" id="field-otherRole">
-<label for="nrf-otherRole">Specify role <abbr title="required">*</abbr></label>
-<input class="nrf-input" type="text" id="nrf-otherRole" placeholder="Describe your role">
 </div>
-</div>
-
-</div>
-</div>
-
 <div id="nrf-section-existing" class="nrf-hidden">
 <div class="nrf-fields">
 <div class="nrf-row">
-<div class="nrf-field" id="field-existingUsername">
-<label for="nrf-existingUsername">Username <abbr title="required">*</abbr></label>
-<p>Must be more than 8 characters</p>
-<input class="nrf-input" type="text" id="nrf-existingUsername" autocomplete="username" placeholder="Your existing username">
+<div id="field-existingBehalf" class="nrf-field"><label for="nrf-existingBehalf">Are you completing this form for yourself or on behalf of someone else? <abbr title="required">*</abbr></label><select id="nrf-existingBehalf" class="nrf-input nrf-input--select">
+<option value="">— Select an option —</option>
+<option value="Self">For myself</option>
+<option value="Someone Else">On behalf of someone else</option>
+</select></div>
 </div>
-</div>
+<div id="nrf-existing-requesterRow" class="nrf-row nrf-hidden">
+<div id="field-existingRequesterEmail" class="nrf-field"><label for="nrf-existingRequesterEmail">Requester's email address <abbr title="required">*</abbr></label>Email address of the person this request is being submitted for
 
-<div class="nrf-row">
-<div class="nrf-field" id="field-existingEmail">
-<label for="nrf-existingEmail">Email address on existing account <abbr title="required">*</abbr></label>
-<p>The address used when originally opening your eraCommons account</p>
-<input class="nrf-input" type="email" id="nrf-existingEmail" autocomplete="email" placeholder="your@email.edu">
-</div>
-</div>
+<input id="nrf-existingRequesterEmail" class="nrf-input" autocomplete="email" type="email" placeholder="requester@northeastern.edu" />
 
+</div>
+</div>
 <div class="nrf-row">
-<div class="nrf-field" id="field-currentEmail">
-<label for="nrf-currentEmail">Current email address <abbr title="required">*</abbr></label>
-<input class="nrf-input" type="email" id="nrf-currentEmail" autocomplete="email" placeholder="your.current@northeastern.edu">
-</div>
-</div>
+<div id="field-existingUsername" class="nrf-field"><label for="nrf-existingUsername">Username <abbr title="required">*</abbr></label>Must be more than 8 characters
 
+<input id="nrf-existingUsername" class="nrf-input" autocomplete="username" type="text" placeholder="Your existing username" />
+
+</div>
+</div>
 <div class="nrf-row">
-<div class="nrf-field" id="field-existingNihRole">
-<label for="nrf-existingNihRole">NIH role <abbr title="required">*</abbr></label>
-<select class="nrf-input nrf-input--select" id="nrf-existingNihRole">
+<div id="field-existingEmail" class="nrf-field"><label for="nrf-existingEmail">Email address on existing account <abbr title="required">*</abbr></label>The address used when originally opening your eraCommons account
+
+<input id="nrf-existingEmail" class="nrf-input" autocomplete="email" type="email" placeholder="your@email.edu" />
+
+</div>
+</div>
+<div class="nrf-row">
+<div id="field-currentEmail" class="nrf-field"><label for="nrf-currentEmail">Current email address <abbr title="required">*</abbr></label><input id="nrf-currentEmail" class="nrf-input" autocomplete="email" type="email" placeholder="your.current@northeastern.edu" /></div>
+</div>
+<div class="nrf-row">
+<div id="field-existingNihRole" class="nrf-field"><label for="nrf-existingNihRole">NIH role <abbr title="required">*</abbr></label><select id="nrf-existingNihRole" class="nrf-input nrf-input--select">
 <option value="">— Select a role —</option>
 <option value="AA">AA</option>
 <option value="ASST">ASST</option>
@@ -124,75 +124,29 @@
 <option value="SPONSOR">SPONSOR</option>
 <option value="TRAINEE">TRAINEE</option>
 <option value="Undergraduate">Undergraduate</option>
-<option value="Other">Other</option>
-</select>
+</select></div>
 </div>
 </div>
-
 </div>
-</div>
-
 <div class="nrf-banner">Your request will be sent to the <strong>NU-RES Help Center</strong> at <strong>NU-RESHC@northeastern.edu</strong>. You will receive a confirmation from NIH eraCommons once processed.</div>
-
 <div id="nrf-status" class="nrf-banner nrf-hidden"></div>
-
-<div class="nrf-actions">
-<button class="nrf-btn nrf-btn--primary" id="nrf-submit">Submit request</button>
-<button class="nrf-btn nrf-btn--ghost" id="nrf-clear">Clear form</button>
+<div class="nrf-actions"><button id="nrf-submit" class="nrf-btn nrf-btn--primary">Submit request</button>
+<button id="nrf-clear" class="nrf-btn nrf-btn--ghost">Clear form</button></div>
 </div>
-
-</div>
-
 <div class="nrf-roles">
 <h3 class="nrf-roles__title">NIH roles</h3>
 <ul class="nrf-roles__list">
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">AA</strong>
-<p class="nrf-roles__desc">Account Administrator at an organization, who facilitates the administration of Commons accounts.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">ASST</strong>
-<p class="nrf-roles__desc">An assistant who may be delegated to perform tasks on behalf of the PD/PI.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">FCOI</strong>
-<p class="nrf-roles__desc">Those at an organization who manage the Financial Conflict of Interest module and report submission.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">FSR</strong>
-<p class="nrf-roles__desc">A person in an organization responsible for completing and submitting Federal Financial Reports (FFR).</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">Graduate</strong>
-<p class="nrf-roles__desc">Role assigned to an individual who is a graduate student and is participating in an NIH-funded project for at least one person month. <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-13-097.html" target="_blank" rel="noopener">Refer to the guide notice for more information.</a></p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">PACR</strong>
-<p class="nrf-roles__desc">Having this role provides access to the Public Access Compliance Report system via the Commons home page.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">PI</strong>
-<p class="nrf-roles__desc">Program Director/Principal Investigator (also called PD/PI), who directs a research project or program supported by the NIH.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">POSTDOC</strong>
-<p class="nrf-roles__desc">POSTDOC role exists in Commons for those at an institution serving in a postdoctoral role. This could be someone who is being mentored and not yet in a permanent position.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">Project Personnel</strong>
-<p class="nrf-roles__desc">Role assigned to an individual performing other project roles on a project. <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-13-097.html" target="_blank" rel="noopener">Refer to the guide notice for more information.</a></p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">SPONSOR</strong>
-<p class="nrf-roles__desc">Sponsors supervise the research training experience of individual fellows supported by fellowship awards in the xTrain module.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">TRAINEE</strong>
-<p class="nrf-roles__desc">TRAINEE user manages the electronic appointments of their own awarded training grants.</p>
-</li>
-<li class="nrf-roles__item">
-<strong class="nrf-roles__role">Undergraduate</strong>
-<p class="nrf-roles__desc">Role assigned to an individual who is in an undergraduate program and is participating in an NIH-funded project for at least one person month. <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-13-097.html" target="_blank" rel="noopener">Refer to the guide notice for more information.</a></p>
-</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">AA: </strong>Account Administrator at an organization, who facilitates the administration of Commons accounts.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">ASST: </strong>An assistant who may be delegated to perform tasks on behalf of the PD/PI.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">FCOI: </strong>Those at an organization who manage the Financial Conflict of Interest module and report submission.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">FSR: </strong>A person in an organization responsible for completing and submitting Federal Financial Reports (FFR).</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">Graduate: </strong>Role assigned to an individual who is a graduate student and is participating in an NIH-funded project for at least one person month. <a style="font-family: Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;" href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-13-097.html" target="_blank" rel="noopener">Refer to the guide notice for more information.</a></li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">PACR: </strong>Having this role provides access to the Public Access Compliance Report system via the Commons home page.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">PI: </strong>Program Director/Principal Investigator (also called PD/PI), who directs a research project or program supported by the NIH.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">POSTDOC: </strong>POSTDOC role exists in Commons for those at an institution serving in a postdoctoral role. This could be someone who is being mentored and not yet in a permanent position.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">Project Personnel: </strong>Role assigned to an individual performing other project roles on a project. <a style="font-family: Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;" href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-13-097.html" target="_blank" rel="noopener">Refer to the guide notice for more information.</a></li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">SPONSOR: </strong>Sponsors supervise the research training experience of individual fellows supported by fellowship awards in the xTrain module.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">TRAINEE: </strong>TRAINEE user manages the electronic appointments of their own awarded training grants.</li>
+ 	<li class="nrf-roles__item"><strong class="nrf-roles__role">Undergraduate: </strong>Role assigned to an individual who is in an undergraduate program and is participating in an NIH-funded project for at least one person month. <a style="font-family: Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;" href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-13-097.html" target="_blank" rel="noopener">Refer to the guide notice for more information.</a></li>
 </ul>
 </div>
